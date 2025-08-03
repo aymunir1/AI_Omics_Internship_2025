@@ -66,6 +66,3 @@ write.csv(data, file = "clean_data/patient_info_clean.csv")
 save.image(file = "Yusuf_Munir_Aliyu_class_1b_Assignment.RData")
 save(data, file = "Yusuf_Munir_Aliyu_class_1b_Assignment.RData")
 
-
-
-write.csv(disease_status,file = "result/patient_data.csv")
