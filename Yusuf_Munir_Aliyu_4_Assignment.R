@@ -1,3 +1,19 @@
+#------------------------------------------------------------------------------------------------
+#                      ASSIGNED TASK
+#------------------------------------------------------------------------------------------------
+
+# 1. Perform quality control before and after normalization and 
+# check whether any arrays are flagged as outliers. 
+# note down how many you found before and after normalization
+
+# 2. Normalize the data and then apply filtering to remove low-intensity probes 
+# and note how many transcripts remain. 
+
+# 3. Use the phenotype information to define your target groups and re-label them (e.g normal vs cancer)
+
+
+
+
 
 # Install and Load Required Packages
 
@@ -123,3 +139,4 @@ levels(groups)
 
 # Save workspace
 save.image(file = "GSE79940.RData")
+
