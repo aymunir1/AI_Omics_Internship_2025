@@ -1,18 +1,9 @@
-getwd()
-setwd("C:/Users/User/Desktop/AI & BIOTECH R")
-
-
-setwd("C:/Users/User/Desktop/AI_Omics_Internship_2025/Module_I")
-
-
-
 #                               CLASS 1C
 
 
 # variables
 # store value in R
 # <- assignment operator
-
 
 # gene name "TPS3"
 
@@ -30,8 +21,6 @@ expression_level <- c(2.3, 4.6, 3.6, 7.2, 4.7)
 # to import data as variable
 raw_data <- read.csv(file.choose())
 
-
-
 # Rules
 
 # variable name must be start with letter
@@ -47,14 +36,12 @@ sample id <- "s01"
 sample_id <- "s01"
 sample.id <- "s01"
 
-
 # R is case sensitive
 Glucose_level <- 110
 glucose_level <- 110
 
 # R overwrite variable without any warning
 glucose_level <- c(110, 90, 120)
-
 
 data <- raw_data
 raw_data$patient_id <- NULL #this code remove patient_id column
@@ -64,10 +51,6 @@ raw_data$patient_id <- NULL #this code remove patient_id column
 clean_data <- data[,-1] 
 # this code deleted the patient_id column & it assign a new variable
 
-
-
-
-
 # comments are for our own understanding R doesn`t consider it as code
 # data_2 <- 23
 data_2 <- 23
@@ -75,9 +58,6 @@ data_2 <- 23
 # pro tips: turn comments into heading
 #### Heading 1 ####
 #### Heading 2 ####
-
-
-
 
 # keywords
 # These are reserved words in for specific function
@@ -88,7 +68,6 @@ help ("mean")
 ?median
 median
 
-
 # sort values from largest to smallest
 sorted_age <- sort(raw_data$age, decreasing = TRUE)
 sorted_age
@@ -98,8 +77,6 @@ raw_data
 sorted_age2 <- sort(raw_data$age, decreasing = FALSE)
 sorted_age2
 
-
-
 # if & else, which are used for creating logical conditions
 
 gene_expression <- 30
@@ -107,8 +84,6 @@ gene_expression <- 30
 if(gene_expression > 50) {
   print("Gene is highly expressed")
 }
-
-
 
 # here if is the keyword that check the condition if gene_expressiom
 # condition
@@ -120,12 +95,8 @@ if(gene_expression < 50) {
   print("Gene is highly expression")
 }
 
-
-
 # you cannot use keywords as variable name
 if <- 28
-
-
 
 # for loop: used to repeat same tasks multiple times
 # let say we want to convert data type of multiple in the our
@@ -136,8 +107,6 @@ str(raw_data)
 # Gender column from chr to factor
 # diagnosis: cancer/normal it is also a categorical variable
 # Smoker: chr from factor
-
-
 
 #Coverting multiple categorical variables to factor
 # Instead of manually conversion we will use this for loop function for all 3 
@@ -163,13 +132,8 @@ str(raw_data)
 
 
 write.csv(clean_data,file = "results/clean_patient_info_data.csv")
-
 save.image(file = "class_1c_Workspace.RData")
-
-
-
-
-
 load(class_1c_Workspace.RData"")
+
 
 
