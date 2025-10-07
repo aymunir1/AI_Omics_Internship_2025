@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------------------------
-#                      ASSIGNED TASK
+#                      ASSIGNED TASK 4
 #------------------------------------------------------------------------------------------------
 
 # 1. Perform quality control before and after normalization and 
@@ -139,5 +139,6 @@ levels(groups)
 
 # Save workspace
 save.image(file = "GSE79940.RData")
+
 
 
