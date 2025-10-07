@@ -1,7 +1,3 @@
-
-
-
-
 #-------------------------------------------
 #             Assignment 2
 #-------------------------------------------
@@ -67,4 +63,5 @@ for (file in files) {
   cat("\nSummary for", file, ":\n")
   print(table(DEG$status))
 }
+
 
