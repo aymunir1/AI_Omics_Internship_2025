@@ -22,9 +22,6 @@
 #   - Use table() for summaries
 
 
-
-
-
 # ---------------------------
 # Assignment 2: Differential Gene Expression (DGE) Analysis
 # ---------------------------
@@ -63,5 +60,3 @@ for (file in files) {
   cat("\nSummary for", file, ":\n")
   print(table(DEG$status))
 }
-
-
