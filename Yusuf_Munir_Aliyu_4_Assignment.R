@@ -10,7 +10,7 @@
 # and note how many transcripts remain. 
 
 # 3. Use the phenotype information to define your target groups and re-label them (e.g normal vs cancer)
-
+#------------------------------------------------------------------------------------------------
 
 
 
@@ -139,4 +139,5 @@ levels(groups)
 
 # Save workspace
 save.image(file = "GSE79940.RData")
+
 
