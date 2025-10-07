@@ -1,6 +1,6 @@
 
 
-###############################   Tasks 1   ###########################
+############################### ASSIGNED TASK 1   ###########################
 
 # ---------------------------------------------------------------------------
 # 1. Set Working Directory
@@ -78,5 +78,6 @@ View(data)
 write.csv(data, file = "clean_data/patient_info_clean.csv")
 
 save.image(file = "Yusuf_Munir_Aliyu_class_1b_Assignment.RData")
+
 
 
