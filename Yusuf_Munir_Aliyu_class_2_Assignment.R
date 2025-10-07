@@ -1,5 +1,5 @@
 #-------------------------------------------
-#             Assignment 2
+#             ASSIGNED TASK 2
 #-------------------------------------------
 # Write a function classify_gene() 
 
@@ -60,3 +60,4 @@ for (file in files) {
   cat("\nSummary for", file, ":\n")
   print(table(DEG$status))
 }
+
