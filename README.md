@@ -13,7 +13,7 @@
 - **Convert Variables:** Converts categorical variables (`gender`, `diagnosis`, `smoker`, `patient_id`) to factors.  
 - **Create Derived Variable:** Generates a binary variable `smoking_status` (Yes = 1, No = 0).  
 - **Save Cleaned Data:** Exports the cleaned dataset to `clean_data/patient_info_clean.csv`.
----
+- 
 **Task 2** — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/edit/main/Yusuf_Munir_Aliyu_class_2_Assignment.R#L15C0)
 - Defines a custom function `classify_gene()` to evaluate each gene based on `logFC` and `padj` values.  
 - **Classification Criteria:**  
@@ -26,11 +26,12 @@
 - Saves processed files into the `Result` folder.  
 - Displays summary counts of gene expression status using frequency tables.
 ---
-**Module II**: Introduction to Genomics Data Analysis  
+
+### **Module II**: Introduction to Genomics Data Analysis  
 
 **Task 3**  
 - Retrieve microarray datasets from **ArrayExpress** and **NCBI GEO** for downstream analysis.
-------
+
 **Task 4 — Microarray Data Preprocessing Workflow**  
 **1️⃣ Quality Control (Pre- and Post-Normalization)**  
 - Perform **quality control (QC)** on raw expression data to assess overall array performance.  
