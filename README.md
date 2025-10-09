@@ -1,9 +1,10 @@
-## 🧪 Practical Sessions  
+##  Practical Sessions  
 
-**Module I:** Basics of R Programming  
+## **Module I:** Basics of R Programming  
+
 1. **Class 1A:** R Program Installation  
 2. **Class 1B:** R Basic Operations — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Class_1b.R)  
-3. **Class 1C:** R Basic Syntax — [R Script with Practice Exercises](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Class_1c.R)  
+3. **Class 1C:** R Basic Syntax — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Class_1c.R)  
 4. **Class 2:** Operators in R | Data Structures in R | User-Defined Functions | for-Loop — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/edit/main/Class_2.R)
 ---
 **Task 1** — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_Assignment%201b.R)
@@ -32,15 +33,16 @@
 **Task 3**  
 - Retrieve microarray datasets from **ArrayExpress** and **NCBI GEO** for downstream analysis.
 
-**Task 4 — Microarray Data Preprocessing Workflow**  
-**1️⃣ Quality Control (Pre- and Post-Normalization)**  
-- Perform **quality control (QC)** on raw expression data to assess overall array performance.  
-- Identify and flag **outlier arrays** using diagnostic plots (boxplots, MA plots, PCA).  
-- Document the **number of outliers detected** before and after normalization.
-**2️⃣ Normalization and Probe Filtering**  
-- Apply appropriate **normalization** (e.g., RMA, quantile normalization) to correct technical variation.  
-- Filter out **low-intensity or non-informative probes** to enhance reliability.  
-- Record the **number of transcripts retained** after filtering.
-**3️⃣ Phenotype Group Definition**  
-- Use **phenotype metadata** to define biological groups (e.g., *Normal* vs *Cancer*).  
-- Relabel or encode samples to ensure consistency for **differential expression analysis**.
+**Task 4 — Microarray Data Preprocessing Workflow** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_4_Assignment.R)  
+- **1 Quality Control (Pre- and Post-Normalization)** 
+  - Perform quality control (QC) on raw expression data to assess overall array performance.  
+  - Identify and flag outlier arrays using diagnostic plots (e.g., boxplots, MA plots, PCA).  
+  - Document the number of outliers detected before and after normalization.  
+- **2 Normalization and Probe Filtering**  
+  - Apply appropriate normalization (e.g., RMA, quantile normalization) to correct technical variation.  
+  - Filter out low-intensity or non-informative probes to enhance reliability.  
+  - Record the number of transcripts retained after filtering.  
+- **3 Phenotype Group Definition**
+  - Use phenotype metadata to define biological groups (e.g., Normal vs Cancer).  
+  - Relabel or encode samples to ensure consistency for differential expression analysis.  
+
