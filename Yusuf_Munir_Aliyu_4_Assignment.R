@@ -130,7 +130,7 @@ class(phenotype_data_4$source_name_ch1)
 phenotype_data_4$source_name_ch
 
 groups <- factor(phenotype_data_4$source_name_ch1,
-                 levels = c("NASH-HCC liver tissues", "precarcinoma-NASH-HCC liver tissues"),
+                 levels = c("precarcinoma-NASH-HCC liver tissues","NASH-HCC liver tissues"),
                  label = c("normal", "cancer"))
 
 
@@ -138,7 +138,8 @@ class(groups)
 levels(groups)
 
 # Save workspace
-save.image(file = "GSE79940.RData")
+save.image(file = "GSE99807.RData")
+
 
 
 
