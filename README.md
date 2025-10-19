@@ -35,14 +35,34 @@
 
 **Task 4 — Microarray Data Preprocessing Workflow** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_4_Assignment.R)  
 - **1 Quality Control (Pre- and Post-Normalization)** 
-  - Perform quality control (QC) on raw expression data to assess overall array performance.  
-  - Identify and flag outlier arrays using diagnostic plots (e.g., boxplots, MA plots, PCA).  
-  - Document the number of outliers detected before and after normalization.  
+  - Performed quality control (QC) on raw expression data to assess overall array performance.  
+  - Identified and flag outlier arrays using diagnostic plots (e.g., boxplots, MA plots, PCA).  
+  - Documented the number of outliers detected before and after normalization.  
 - **2 Normalization and Probe Filtering**  
-  - Apply appropriate normalization (e.g., RMA, quantile normalization) to correct technical variation.  
-  - Filter out low-intensity or non-informative probes to enhance reliability.  
-  - Record the number of transcripts retained after filtering.  
+  - Applied appropriate normalization (e.g., RMA, quantile normalization) to correct technical variation.  
+  - Filtered out low-intensity or non-informative probes to enhance reliability.  
+  - Recorded the number of transcripts retained after filtering.  
 - **3 Phenotype Group Definition**
-  - Use phenotype metadata to define biological groups (e.g., Normal vs Cancer).  
-  - Relabel or encode samples to ensure consistency for differential expression analysis.  
+  - Used phenotype metadata to define biological groups (e.g., Normal vs Cancer).  
+  - Relabeled/encoded samples to ensure consistency for differential expression analysis.
+  - 
+
+  Task 5 — Microarray differential data analysis [R Script]()
+**1. I mapped probe IDs to gene symbols using the AnnotationDbi package.**
+  - I loaded the appropriate annotation package for my microarray platform.
+  - I used the select() and mapIds() functions to map probe IDs to gene symbols.
+  - I identified probes that mapped to the same gene.
+  - I handled duplicate probes by calculating the average expression value 
+    for each gene to ensure a single representative value.
+**2. I performed differential gene expression analysis using the limma package.**
+  -  I defined the experimental design and contrast (cancer_vs_normal).
+  - I fitted a linear model to the expression data using lmFit().
+  - I applied empirical Bayes moderation with eBayes() to obtain 
+   more stable variance estimates.
+  - I extracted the list of differentially expressed genes (DEGs) 
+   using topTable() based on adjusted p-value and log2 fold change thresholds.
+**3. I visualized the differential expression results.**
+  - I created a volcano plot to display upregulated and downregulated genes.
+  - I generated a heatmap of the top 25 DEGs using pheatmap() 
+   to show expression patterns across the samples.
 
