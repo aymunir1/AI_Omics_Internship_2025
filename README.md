@@ -48,20 +48,20 @@
   - 
 
   **Task 5 — Microarray differential data analysis** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_5_Assignment)
-- **1. I mapped probe IDs to gene symbols using the AnnotationDbi package.**
+- **1. Probe IDs Mapping to gene symbols using the AnnotationDbi package.**
   - I loaded the appropriate annotation package for my microarray platform.
   - I used the select() and mapIds() functions to map probe IDs to gene symbols.
   - I identified probes that mapped to the same gene.
   - I handled duplicate probes by calculating the average expression value 
     for each gene to ensure a single representative value.
-**2. I performed differential gene expression analysis using the limma package.**
+- **2. Differential gene expression analysis using the limma package.**
   -  I defined the experimental design and contrast (cancer_vs_normal).
   - I fitted a linear model to the expression data using lmFit().
   - I applied empirical Bayes moderation with eBayes() to obtain 
    more stable variance estimates.
   - I extracted the list of differentially expressed genes (DEGs) 
    using topTable() based on adjusted p-value and log2 fold change thresholds.
-**3. I visualized the differential expression results.**
+- **3.Visualization the differential expression results.**
   - I created a volcano plot to display upregulated and downregulated genes.
   - I generated a heatmap of the top 25 DEGs using pheatmap() 
    to show expression patterns across the samples.
