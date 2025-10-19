@@ -47,8 +47,8 @@
   - Relabeled/encoded samples to ensure consistency for differential expression analysis.
   - 
 
-  Task 5 — Microarray differential data analysis [R Script]()
-**1. I mapped probe IDs to gene symbols using the AnnotationDbi package.**
+  **Task 5 — Microarray differential data analysis** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_5_Assignment)
+- **1. I mapped probe IDs to gene symbols using the AnnotationDbi package.**
   - I loaded the appropriate annotation package for my microarray platform.
   - I used the select() and mapIds() functions to map probe IDs to gene symbols.
   - I identified probes that mapped to the same gene.
