@@ -47,22 +47,21 @@
   - Relabeled/encoded samples to ensure consistency for differential expression analysis.
   - 
 
-  **Task 5 — Microarray differential data analysis** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_5_Assignment)
-- **1. Probe IDs Mapping to gene symbols using the AnnotationDbi package.**
-  - I loaded the appropriate annotation package for my microarray platform.
-  - I used the select() and mapIds() functions to map probe IDs to gene symbols.
-  - I identified probes that mapped to the same gene.
-  - I handled duplicate probes by calculating the average expression value 
-    for each gene to ensure a single representative value.
-- **2. Differential gene expression analysis using the limma package.**
-  -  I defined the experimental design and contrast (cancer_vs_normal).
-  - I fitted a linear model to the expression data using lmFit().
-  - I applied empirical Bayes moderation with eBayes() to obtain 
-   more stable variance estimates.
-  - I extracted the list of differentially expressed genes (DEGs) 
-   using topTable() based on adjusted p-value and log2 fold change thresholds.
-- **3.Visualization the differential expression results.**
-  - I created a volcano plot to display upregulated and downregulated genes.
-  - I generated a heatmap of the top 25 DEGs using pheatmap() 
-   to show expression patterns across the samples.
+ # Task 5: Microarray Differential Data Analysis [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_5_Assignment)
+
+# 1. Probe ID Mapping (AnnotationDbi)
+#    - Loaded the appropriate annotation package for the microarray platform.
+#    - Used select() and mapIds() to map probe IDs to gene symbols.
+#    - Identified probes that mapped to the same gene.
+#    - Averaged duplicate probe values to obtain a single expression per gene.
+
+# 2. Differential Expression Analysis (limma)
+#    - Defined the experimental design and contrast (cancer_vs_normal).
+#    - Fitted a linear model using lmFit() and applied eBayes().
+#    - Extracted DEGs with topTable() based on adjusted p-value and log2 fold change.
+
+# 3. Visualization
+#    - Created a volcano plot to show upregulated and downregulated genes.
+#    - Generated a heatmap of the top 25 DEGs using pheatmap().
+
 
