@@ -45,23 +45,25 @@
 - **3 Phenotype Group Definition**
   - Used phenotype metadata to define biological groups (e.g., Normal vs Cancer).  
   - Relabeled/encoded samples to ensure consistency for differential expression analysis.
-  - 
+ 
+    **Task 5 — Microarray Differential Data Analysis** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_5_Assignment)
 
- # Task 5: Microarray Differential Data Analysis [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_5_Assignment)
+1. Probe ID Mapping to Gene Symbols using the AnnotationDbi package
+   - Loaded the appropriate annotation package for the microarray platform
+   - Used select() and mapIds() functions to map probe IDs to gene symbols
+   - Identified probes that mapped to the same gene
+   - Handled duplicate probes by averaging expression values per gene
 
-# 1. Probe ID Mapping (AnnotationDbi)
-#    - Loaded the appropriate annotation package for the microarray platform.
-#    - Used select() and mapIds() to map probe IDs to gene symbols.
-#    - Identified probes that mapped to the same gene.
-#    - Averaged duplicate probe values to obtain a single expression per gene.
+2. Differential Gene Expression Analysis using the limma package
+   - Defined the experimental design and contrast (cancer_vs_normal)
+   - Fitted a linear model using lmFit()
+   - Applied empirical Bayes moderation with eBayes() for stable variance estimation
+   - Extracted differentially expressed genes (DEGs) using topTable()
+     based on adjusted p-value and log2 fold change thresholds
 
-# 2. Differential Expression Analysis (limma)
-#    - Defined the experimental design and contrast (cancer_vs_normal).
-#    - Fitted a linear model using lmFit() and applied eBayes().
-#    - Extracted DEGs with topTable() based on adjusted p-value and log2 fold change.
-
-# 3. Visualization
-#    - Created a volcano plot to show upregulated and downregulated genes.
-#    - Generated a heatmap of the top 25 DEGs using pheatmap().
+3. Visualization of Differential Expression Results
+   - Created a volcano plot showing upregulated and downregulated genes
+   - Generated a heatmap of the top 25 DEGs using pheatmap()
+     to visualize expression patterns across samples
 
 
