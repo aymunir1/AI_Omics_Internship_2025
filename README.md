@@ -33,7 +33,7 @@
 **Task 3**  
 - Retrieve microarray datasets from **ArrayExpress** and **NCBI GEO** for downstream analysis.
 
-**Task 4 — Microarray Data Preprocessing Workflow** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_4_Assignment.R)  
+**Task 4 — Microarray Data Preprocessing Workflow** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_4_Assignment.R)  
 - **1 Quality Control (Pre- and Post-Normalization)** 
   - Performed quality control (QC) on raw expression data to assess overall array performance.  
   - Identified and flag outlier arrays using diagnostic plots (e.g., boxplots, MA plots, PCA).  
