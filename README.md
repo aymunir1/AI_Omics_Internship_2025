@@ -7,7 +7,7 @@
 3. **Class 1C:** R Basic Syntax — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Class_1c.R)  
 4. **Class 2:** Operators in R | Data Structures in R | User-Defined Functions | for-Loop — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/edit/main/Class_2.R)
 ---
-**Task 1** — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_Assignment%201b.R)
+**Task 1** — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_Assignment%201b.R)
 - **Create Subfolders:** Sets up project directories (`raw_data`, `clean_data`, `scripts`, `results`, `plot`) for data management.  
 - **Load Dataset:** Imports the dataset (`patient_info.csv`) using `read.csv()` and inspects its contents.  
 - **Inspect Data Structure:** Uses `str()` and `class()` to examine variables and data organization.  
