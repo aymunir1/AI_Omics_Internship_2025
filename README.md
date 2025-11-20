@@ -15,7 +15,7 @@
 - **Create Derived Variable:** Generates a binary variable `smoking_status` (Yes = 1, No = 0).  
 - **Save Cleaned Data:** Exports the cleaned dataset to `clean_data/patient_info_clean.csv`.
 - 
-**Task 2** — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/edit/main/Yusuf_Munir_Aliyu_class_2_Assignment.R#L15C0)
+**Task 2** — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_class_2_Assignment.R)
 - Defines a custom function `classify_gene()` to evaluate each gene based on `logFC` and `padj` values.  
 - **Classification Criteria:**  
   - `logFC > 1` and `padj < 0.05` → Upregulated  
