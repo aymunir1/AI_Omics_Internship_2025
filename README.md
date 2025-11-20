@@ -15,7 +15,7 @@ This repository contains all practical sessions completed during **Module I (R P
 ---
 
 ## 🧩 Task 1 — Data Cleaning & Project Setup  
-📄 **Script:** [Yusuf_Munir_Aliyu_Assignment_1b.R](Codes/Yusuf_Munir_Aliyu_Assignment%201b.R)
+📄 [Script:](Codes/Yusuf_Munir_Aliyu_Assignment%201b.R)
 
 ### **Key Activities**
 - Created standard project directories (`raw_data`, `clean_data`, `scripts`, `results`, `plot`).  
@@ -23,11 +23,10 @@ This repository contains all practical sessions completed during **Module I (R P
 - Converted categorical variables to factors (`gender`, `diagnosis`, `smoker`, `patient_id`).  
 - Created `smoking_status` binary variable (Yes = 1, No = 0).  
 - Exported cleaned dataset to `clean_data/patient_info_clean.csv`.
-
 ---
 
 ## 🧬 Task 2 — Gene Expression Classification Function  
-📄 **Script:** [Yusuf_Munir_Aliyu_class_2_Assignment.R](Codes/Yusuf_Munir_Aliyu_class_2_Assignment.R)
+📄 [Script](Codes/Yusuf_Munir_Aliyu_class_2_Assignment.R)
 
 ### **Summary**
 - Implemented custom function `classify_gene()` based on `logFC` and `padj`.  
@@ -50,7 +49,7 @@ This repository contains all practical sessions completed during **Module I (R P
 ---
 
 ## 🧹 Task 4 — Microarray Preprocessing Workflow  
-📄 **Script:** [Yusuf_Munir_Aliyu_4_Assignment.R](Codes/Yusuf_Munir_Aliyu_4_Assignment.R)
+📄 [Script](Codes/Yusuf_Munir_Aliyu_4_Assignment.R)
 
 ### **1. Quality Control**
 - Performed pre- and post-normalization QC.  
@@ -69,7 +68,7 @@ This repository contains all practical sessions completed during **Module I (R P
 ---
 
 ## 📊 Task 5 — Differential Expression Analysis  
-📄 **Script:** [Yusuf_Munir_Aliyu_5_Assignment.R](Codes/Yusuf_Munir_Aliyu_5_Assignment.R)
+📄 [Script](Codes/Yusuf_Munir_Aliyu_5_Assignment.R)
 
 ### **1. Probe-to-Gene Mapping**
 - Used `AnnotationDbi` to map probe IDs to gene symbols.  
@@ -85,5 +84,17 @@ This repository contains all practical sessions completed during **Module I (R P
 - Created heatmap of top 25 DEGs using `pheatmap`.
 
 ---
+
+## 📊 Task 6 — Functonal Enrichment Analysis  
+
+
+----
+
+
+## 📊 Task 7 — Machine Learning
+
+
+-----
+
 
 ## 📁 Repository Structure
