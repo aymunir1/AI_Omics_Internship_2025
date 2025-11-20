@@ -28,7 +28,7 @@
 - Displays summary counts of gene expression status using frequency tables.
 ---
 
-### **Module II**: Introduction to Genomics Data Analysis  
+### **Module II**: Introduction to Genomics Data Analysis ###  
 
 **Task 3**  
 - Retrieve microarray datasets from **ArrayExpress** and **NCBI GEO** for downstream analysis.
@@ -38,29 +38,26 @@
   - Performed quality control (QC) on raw expression data to assess overall array performance.  
   - Identified and flag outlier arrays using diagnostic plots (e.g., boxplots, MA plots, PCA).  
   - Documented the number of outliers detected before and after normalization.  
-- **2 Normalization and Probe Filtering**  
+  2 Normalization and Probe Filtering  
   - Applied appropriate normalization (e.g., RMA, quantile normalization) to correct technical variation.  
   - Filtered out low-intensity or non-informative probes to enhance reliability.  
   - Recorded the number of transcripts retained after filtering.  
-- **3 Phenotype Group Definition**
+  3 Phenotype Group Definition
   - Used phenotype metadata to define biological groups (e.g., Normal vs Cancer).  
   - Relabeled/encoded samples to ensure consistency for differential expression analysis.
  
-    **Task 5 — Microarray Differential Data Analysis** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Yusuf_Munir_Aliyu_5_Assignment)
-
+    **Task 5 — Microarray Differential Data Analysis** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_5_Assignment.R)
 1. Probe ID Mapping to Gene Symbols using the AnnotationDbi package
    - Loaded the appropriate annotation package for the microarray platform
    - Used select() and mapIds() functions to map probe IDs to gene symbols
    - Identified probes that mapped to the same gene
    - Handled duplicate probes by averaging expression values per gene
-
 2. Differential Gene Expression Analysis using the limma package
    - Defined the experimental design and contrast (cancer_vs_normal)
    - Fitted a linear model using lmFit()
    - Applied empirical Bayes moderation with eBayes() for stable variance estimation
    - Extracted differentially expressed genes (DEGs) using topTable()
      based on adjusted p-value and log2 fold change thresholds
-
 3. Visualization of Differential Expression Results
    - Created a volcano plot showing upregulated and downregulated genes
    - Generated a heatmap of the top 25 DEGs using pheatmap()
