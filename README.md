@@ -3,7 +3,7 @@
 ## **Module I:** Basics of R Programming  
 
 1. **Class 1A:** R Program Installation  
-2. **Class 1B:** R Basic Operations — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_Assignment%201b.R)  
+2. **Class 1B:** R Basic Operations — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I-Getting%20Started%20WIth%20R-Class%20Ib.R)  
 3. **Class 1C:** R Basic Syntax — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I-Basic_Syntax-CLass%20Ic.R)  
 4. **Class 2:** Operators in R | Data Structures in R | User-Defined Functions | for-Loop — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I-Basic_R_Functions-Class_2.R)
 ---
