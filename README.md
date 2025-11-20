@@ -1,66 +1,89 @@
-##  Practical Sessions  
+# 📘 AI Omics Internship 2025 — Practical Sessions  
 
-## **Module I:** Basics of R Programming  
+This repository contains all practical sessions completed during **Module I (R Programming Basics)** and **Module II (Genomics Data Analysis)**. Each task includes scripts, workflows, and detailed summaries of analytical steps.
 
+---
+
+## 🔷 Module I — Basics of R Programming
+
+### **Class Sessions**
 1. **Class 1A:** R Program Installation  
-2. **Class 1B:** R Basic Operations — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I-Getting%20Started%20WIth%20R-Class%20Ib.R)  
-3. **Class 1C:** R Basic Syntax — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I-Basic_Syntax-CLass%20Ic.R)  
-4. **Class 2:** Operators in R | Data Structures in R | User-Defined Functions | for-Loop — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I-Basic_R_Functions-Class_2.R)
----
-**Task 1** — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_Assignment%201b.R)
-- **Create Subfolders:** Sets up project directories (`raw_data`, `clean_data`, `scripts`, `results`, `plot`) for data management.  
-- **Load Dataset:** Imports the dataset (`patient_info.csv`) using `read.csv()` and inspects its contents.  
-- **Inspect Data Structure:** Uses `str()` and `class()` to examine variables and data organization.  
-- **Convert Variables:** Converts categorical variables (`gender`, `diagnosis`, `smoker`, `patient_id`) to factors.  
-- **Create Derived Variable:** Generates a binary variable `smoking_status` (Yes = 1, No = 0).  
-- **Save Cleaned Data:** Exports the cleaned dataset to `clean_data/patient_info_clean.csv`.
-- 
-**Task 2** — [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_class_2_Assignment.R)
-- Defines a custom function `classify_gene()` to evaluate each gene based on `logFC` and `padj` values.  
-- **Classification Criteria:**  
-  - `logFC > 1` and `padj < 0.05` → Upregulated  
-  - `logFC < -1` and `padj < 0.05` → Downregulated  
-  - Otherwise → Not Significant  
-- Processes two datasets (`DEGs_Data_1.csv` and `DEGs_Data_2.csv`) in a loop.  
-- Replaces missing `padj` values with 1 to prevent computation errors.  
-- Adds a `status` column to each dataset for classification results.  
-- Saves processed files into the `Result` folder.  
-- Displays summary counts of gene expression status using frequency tables.
+2. **Class 1B:** R Basic Operations — [View Script](Codes/Module%20I-Getting%20Started%20WIth%20R-Class%20Ib.R)  
+3. **Class 1C:** R Basic Syntax — [View Script](Codes/Module%20I-Basic_Syntax-CLass%20Ic.R)  
+4. **Class 2:** Operators, Data Structures, Functions & Loops — [View Script](Codes/Module%20I-Basic_R_Functions-Class_2.R)
+
 ---
 
-### **Module II**: Introduction to Genomics Data Analysis ###  
+## 🧩 Task 1 — Data Cleaning & Project Setup  
+📄 **Script:** [Yusuf_Munir_Aliyu_Assignment_1b.R](Codes/Yusuf_Munir_Aliyu_Assignment%201b.R)
 
-**Task 3**  
-- Retrieve microarray datasets from **ArrayExpress** and **NCBI GEO** for downstream analysis.
+### **Key Activities**
+- Created standard project directories (`raw_data`, `clean_data`, `scripts`, `results`, `plot`).  
+- Loaded dataset (`patient_info.csv`) and performed structural inspection.  
+- Converted categorical variables to factors (`gender`, `diagnosis`, `smoker`, `patient_id`).  
+- Created `smoking_status` binary variable (Yes = 1, No = 0).  
+- Exported cleaned dataset to `clean_data/patient_info_clean.csv`.
 
-**Task 4 — Microarray Data Preprocessing Workflow** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_4_Assignment.R)  
-- **1 Quality Control (Pre- and Post-Normalization)** 
-  - Performed quality control (QC) on raw expression data to assess overall array performance.  
-  - Identified and flag outlier arrays using diagnostic plots (e.g., boxplots, MA plots, PCA).  
-  - Documented the number of outliers detected before and after normalization.  
-  2 Normalization and Probe Filtering  
-  - Applied appropriate normalization (e.g., RMA, quantile normalization) to correct technical variation.  
-  - Filtered out low-intensity or non-informative probes to enhance reliability.  
-  - Recorded the number of transcripts retained after filtering.  
-  3 Phenotype Group Definition
-  - Used phenotype metadata to define biological groups (e.g., Normal vs Cancer).  
-  - Relabeled/encoded samples to ensure consistency for differential expression analysis.
- 
-    **Task 5 — Microarray Differential Data Analysis** [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Yusuf_Munir_Aliyu_5_Assignment.R)
-1. Probe ID Mapping to Gene Symbols using the AnnotationDbi package
-   - Loaded the appropriate annotation package for the microarray platform
-   - Used select() and mapIds() functions to map probe IDs to gene symbols
-   - Identified probes that mapped to the same gene
-   - Handled duplicate probes by averaging expression values per gene
-2. Differential Gene Expression Analysis using the limma package
-   - Defined the experimental design and contrast (cancer_vs_normal)
-   - Fitted a linear model using lmFit()
-   - Applied empirical Bayes moderation with eBayes() for stable variance estimation
-   - Extracted differentially expressed genes (DEGs) using topTable()
-     based on adjusted p-value and log2 fold change thresholds
-3. Visualization of Differential Expression Results
-   - Created a volcano plot showing upregulated and downregulated genes
-   - Generated a heatmap of the top 25 DEGs using pheatmap()
-     to visualize expression patterns across samples
+---
 
+## 🧬 Task 2 — Gene Expression Classification Function  
+📄 **Script:** [Yusuf_Munir_Aliyu_class_2_Assignment.R](Codes/Yusuf_Munir_Aliyu_class_2_Assignment.R)
 
+### **Summary**
+- Implemented custom function `classify_gene()` based on `logFC` and `padj`.  
+- **Classification rules:**  
+  - Upregulated: `logFC > 1` & `padj < 0.05`  
+  - Downregulated: `logFC < -1` & `padj < 0.05`  
+  - Not Significant: otherwise  
+- Processed two DEG datasets using a loop.  
+- Replaced missing adjusted p-values with `1`.  
+- Added `status` column and saved results to the `Result` folder.  
+- Generated summary frequency tables.
+
+---
+
+# 🔷 Module II — Introduction to Genomics Data Analysis
+
+## 🌐 Task 3 — Dataset Retrieval
+- Retrieved microarray datasets from **ArrayExpress** and **NCBI GEO** for analysis.
+
+---
+
+## 🧹 Task 4 — Microarray Preprocessing Workflow  
+📄 **Script:** [Yusuf_Munir_Aliyu_4_Assignment.R](Codes/Yusuf_Munir_Aliyu_4_Assignment.R)
+
+### **1. Quality Control**
+- Performed pre- and post-normalization QC.  
+- Identified outliers using boxplots, PCA, and MA plots.  
+- Documented outliers before and after normalization.
+
+### **2. Normalization & Probe Filtering**
+- Applied normalization methods (RMA, quantile normalization).  
+- Filtered low-intensity and non-informative probes.  
+- Recorded number of retained transcripts.
+
+### **3. Phenotype Definition**
+- Defined biological groups (Normal vs Cancer).  
+- Ensured consistent sample labeling.
+
+---
+
+## 📊 Task 5 — Differential Expression Analysis  
+📄 **Script:** [Yusuf_Munir_Aliyu_5_Assignment.R](Codes/Yusuf_Munir_Aliyu_5_Assignment.R)
+
+### **1. Probe-to-Gene Mapping**
+- Used `AnnotationDbi` to map probe IDs to gene symbols.  
+- Managed duplicate probes by averaging expression.
+
+### **2. limma Differential Expression**
+- Designed contrast: `cancer_vs_normal`.  
+- Applied `lmFit()` and `eBayes()` for model fitting.  
+- Extracted DEGs using `topTable()` with FDR & log2FC thresholds.
+
+### **3. Visualization**
+- Generated volcano plot showing up- & downregulated genes.  
+- Created heatmap of top 25 DEGs using `pheatmap`.
+
+---
+
+## 📁 Repository Structure
