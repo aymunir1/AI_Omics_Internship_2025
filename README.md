@@ -8,14 +8,14 @@ This repository contains all practical sessions completed during **Module I (R P
 
 ### **Class Sessions**
 1. **Class 1A:** R Program Installation  
-2. **Class 1B:** R Basic Operations — [View Script](Codes/Module%20I-Getting%20Started%20WIth%20R-Class%20Ib.R)  
-3. **Class 1C:** R Basic Syntax — [View Script](Codes/Module%20I-Basic_Syntax-CLass%20Ic.R)  
-4. **Class 2:** Operators, Data Structures, Functions & Loops — [View Script](Codes/Module%20I-Basic_R_Functions-Class_2.R)
+2. **Class 1B:** R Basic Operations — [View Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I%20Basic%20of%20R/Module%20I-Getting%20Started%20WIth%20R-Class%20Ib.R)  
+3. **Class 1C:** R Basic Syntax — [View Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I%20Basic%20of%20R/Module%20I-Basic_Syntax-CLass%20Ic.R)  
+4. **Class 2:** Operators, Data Structures, Functions & Loops — [View Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I%20Basic%20of%20R/Module%20I-Basic_R_Functions-Class_2.R)
 
 ---
 
 ## 🧩 Task 1 — Data Cleaning & Project Setup  
-📄 [Script:](Codes/Yusuf_Munir_Aliyu_Assignment%201b.R)
+📄 [Script:](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_class_1b_Assignment.R)
 
 ### **Key Activities**
 - Created standard project directories (`raw_data`, `clean_data`, `scripts`, `results`, `plot`).  
@@ -26,7 +26,7 @@ This repository contains all practical sessions completed during **Module I (R P
 ---
 
 ## 🧬 Task 2 — Gene Expression Classification Function  
-📄 [Script](Codes/Yusuf_Munir_Aliyu_class_2_Assignment.R)
+📄 [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_class_2_Assignment.R)
 
 ### **Summary**
 - Implemented custom function `classify_gene()` based on `logFC` and `padj`.  
@@ -49,7 +49,7 @@ This repository contains all practical sessions completed during **Module I (R P
 ---
 
 ## 🧹 Task 4 — Microarray Preprocessing Workflow  
-📄 [Script](Codes/Yusuf_Munir_Aliyu_4_Assignment.R)
+📄 [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_4_Assignment.R)
 
 ### **1. Quality Control**
 - Performed pre- and post-normalization QC.  
@@ -68,7 +68,7 @@ This repository contains all practical sessions completed during **Module I (R P
 ---
 
 ## 📊 Task 5 — Differential Expression Analysis  
-📄 [Script](Codes/Yusuf_Munir_Aliyu_5_Assignment.R)
+📄 [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_5_Assignment.R)
 
 ### **1. Probe-to-Gene Mapping**
 - Used `AnnotationDbi` to map probe IDs to gene symbols.  
