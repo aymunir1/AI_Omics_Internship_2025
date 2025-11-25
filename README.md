@@ -86,7 +86,7 @@ This repository contains all practical sessions completed during **Module I (R P
 ---
 
 ## 📊 Task 6 — Functonal Enrichment Analysis  
-
+[R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Functional_Enrichment.R)
 
 ----
 
