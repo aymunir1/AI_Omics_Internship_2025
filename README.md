@@ -90,9 +90,8 @@ This repository contains all practical sessions completed during **Module I (R P
 
 ----
 
-
 ## 📊 Task 7 — Machine Learning
-
+[R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/tree/main/Codes/Module%20III%20Machine%20Learning)
 
 -----
 
