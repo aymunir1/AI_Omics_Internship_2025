@@ -1,5 +1,6 @@
+#------------------------------------------------------------------
 #                               CLASS 1C
-
+#------------------------------------------------------------------
 
 # variables
 # store value in R
@@ -134,6 +135,7 @@ str(raw_data)
 write.csv(clean_data,file = "results/clean_patient_info_data.csv")
 save.image(file = "class_1c_Workspace.RData")
 load(class_1c_Workspace.RData"")
+
 
 
 
