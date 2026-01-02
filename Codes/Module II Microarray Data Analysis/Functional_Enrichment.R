@@ -241,6 +241,7 @@ write.csv(KEGG_sig, file.path(enrich_folder, "KEGG_significant_terms.csv"), row.
 write.csv(GSEA_sig, file.path(enrich_folder, "GSEA_significant_terms.csv"), row.names = FALSE)
 write.csv(summary_overall, file.path(enrich_folder, "Summary_Enrichment_Report.csv"), row.names = FALSE)
 
+
 # Save top terms and pathways
 write.csv(top_GO_BP, file.path(enrich_folder, "Top10_GO_BP_terms.csv"), row.names = FALSE)
 write.csv(top_GO_MF, file.path(enrich_folder, "Top10_GO_MF_terms.csv"), row.names = FALSE)
@@ -249,5 +250,6 @@ write.csv(top_GO, file.path(enrich_folder, "Top10_GO_Combined_By_Ontology.csv"),
 write.csv(KEGG_sig %>% arrange(p.adjust) %>% head(10), file.path(enrich_folder, "Top10_KEGG_pathways.csv"), row.names = FALSE)
 write.csv(GSEA_up %>% head(10), file.path(enrich_folder, "Top10_GSEA_Upregulated.csv"), row.names = FALSE)
 write.csv(GSEA_down %>% head(10), file.path(enrich_folder, "Top10_GSEA_Downregulated.csv"), row.names = FALSE)
+
 
 
