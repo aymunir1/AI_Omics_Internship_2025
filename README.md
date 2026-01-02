@@ -1,9 +1,9 @@
 # 📘 AI Omics Internship 2025 — Practical Sessions  
 
 This repository contains all practical sessions completed during on:
-**Module I (R Programming Basics)**  
-**Module II (Genomics Data Analysis)**
-**Module III (Machine Learnimg)**
+- **Module I (R Programming Basics)**  
+- **Module II (Genomics Data Analysis)**
+- **Module III (Machine Learnimg)**
 
 ---
 
