@@ -179,15 +179,12 @@ AI_Omics_Internship_2025/
 │   ├── Module I Basic of R/
 │   ├── Module II Microarray Data Analysis/
 │   └── Module III Machine Learning/
-│
 ├── Datasets/
 │   ├── Raw Datasets/
 │   ├── Clean Datasets/
 │   └── DEG Results/
-│
 ├── Results/
 │   ├── Feature Selection/
 │   ├── Enrichment Analysis/
 │   └── Model Evaluation Outputs/
-│
 └── README.md
