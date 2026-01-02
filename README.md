@@ -92,6 +92,29 @@ This repository contains all practical sessions completed during **Module I (R P
 
 ## 📊 Task 7 — Machine Learning
 [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/tree/main/Codes/Module%20III%20Machine%20Learning)
+## 📊 Workflow Overview
+
+### 1️⃣ Data Preprocessing
+- Log₁₀ transformation to stabilize variance  
+- Transposition (samples as rows, genes as columns)  
+- Near-zero variance filtering  
+- Feature scaling and centering  
+- KNN imputation for missing values  
+
+### 2️⃣ Feature Selection
+- **Boruta** identifies statistically significant genes  
+- **RFE (Recursive Feature Elimination)** iteratively removes weak predictors  
+- Common genes between Boruta and RFE are extracted  
+
+### 3️⃣ Model Training
+- 70/30 train–test split  
+- 10-fold cross-validation  
+- **Random Forest (RF)**, **Support Vector Machine (SVM)**, and **Artificial Neural Network (ANN)** trained on selected gene sets  
+
+### 4️⃣ Model Evaluation
+- Accuracy assessment using confusion matrices  
+- ROC curve visualization  
+- AUC-based model discrimination comparison  
 
 -----
 
