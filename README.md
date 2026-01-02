@@ -174,3 +174,20 @@ This repository contains all practical sessions completed during **Module I (R P
 
 
 ## 📁 Repository Structure
+AI_Omics_Internship_2025/
+├── Codes/
+│   ├── Module I Basic of R/
+│   ├── Module II Microarray Data Analysis/
+│   └── Module III Machine Learning/
+│
+├── Datasets/
+│   ├── Raw datasets
+│   ├── Clean Datasets/
+│   └── DEG results
+│
+├── Results/
+│   ├── Feature selection
+│   ├── Enrichment analysis
+│   └── Model evaluation outputs
+│
+└── README.md
