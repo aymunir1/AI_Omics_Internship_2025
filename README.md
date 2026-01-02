@@ -67,7 +67,7 @@ This repository contains all practical sessions completed during **Module I (R P
 
 ---
 
-## 📊 Task 5 — Differential Expression Analysis  
+##  Task 5 — Differential Expression Analysis  
 📄 [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_5_Assignment.R)
 
 ### **1. Probe-to-Gene Mapping**
@@ -85,38 +85,92 @@ This repository contains all practical sessions completed during **Module I (R P
 
 ---
 
-## 📊 Task 6 — Functonal Enrichment Analysis  
+##  Task 6 — Functonal Enrichment Analysis  
 [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Functional_Enrichment.R)
+
+### Enrichment Analysis Setup
+- Differentially expressed genes (DEGs) are mapped from **gene symbols to Entrez IDs**
+- Invalid, duplicated, or unmapped genes are removed
+- Significant genes are separated into **upregulated** and **downregulated** sets
+- A background gene universe is defined for overrepresentation testing  
+
+
+### Overrepresentation Analysis (ORA)
+
+#### Gene Ontology (GO)
+- Performs ORA across all three GO domains:
+  - **Biological Process (BP)**
+  - **Molecular Function (MF)**
+  - **Cellular Component (CC)**
+- Identifies GO terms significantly enriched in DEGs compared to background genes
+- Results visualized using:
+  - Dot plots
+  - Bar plots
+  - Ontology-stratified enrichment plots  
+
+#### KEGG Pathway Analysis
+- Identifies significantly enriched **metabolic and signaling pathways**
+- Uses Homo sapiens–specific KEGG annotations
+- Visualizations include:
+  - Dot plots
+  - UpSet plots showing gene overlap among pathways  
+
+
+
+### Gene Set Enrichment Analysis (GSEA)
+
+- Uses a **ranked gene list** based on log fold change (logFC)
+- No hard significance threshold required
+- Employs **MSigDB Hallmark Gene Sets**
+- Identifies pathways enriched at the top or bottom of the ranked list
+- Outputs include:
+  - Enrichment score (NES)
+  - Direction of regulation (up/down)
+  - Core enrichment genes
+- Visualization using:
+  - Running enrichment score plots
+  - Comparative GSEA plots across hallmark pathways  
+
+### Results Summary & Reporting
+
+- Significant results filtered using adjusted p-value < 0.05
+- Outputs generated for:
+  - GO (BP, MF, CC)
+  - KEGG pathways
+  - GSEA (upregulated and downregulated pathways)
+- Summary tables report:
+  - Total number of significant pathways
+  - Directionality of enrichment (GSEA)
+- All results exported as CSV files for reproducibility and downstream reporting
+
 
 ----
 
-## 📊 Task 7 — Machine Learning
+##  Task 7 — Machine Learning
 [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/tree/main/Codes/Module%20III%20Machine%20Learning)
-## 📊 Workflow Overview
-
-### 1️⃣ Data Preprocessing
+###  Data Preprocessing
 - Log₁₀ transformation to stabilize variance  
 - Transposition (samples as rows, genes as columns)  
 - Near-zero variance filtering  
 - Feature scaling and centering  
 - KNN imputation for missing values  
 
-### 2️⃣ Feature Selection
+### Feature Selection
 - **Boruta** identifies statistically significant genes  
 - **RFE (Recursive Feature Elimination)** iteratively removes weak predictors  
 - Common genes between Boruta and RFE are extracted  
 
-### 3️⃣ Model Training
+### Model Training
 - 70/30 train–test split  
 - 10-fold cross-validation  
 - **Random Forest (RF)**, **Support Vector Machine (SVM)**, and **Artificial Neural Network (ANN)** trained on selected gene sets  
 
-### 4️⃣ Model Evaluation
+### Model Evaluation
 - Accuracy assessment using confusion matrices  
 - ROC curve visualization  
 - AUC-based model discrimination comparison  
 
------
+-----------
 
 
 ## 📁 Repository Structure
