@@ -1,13 +1,3 @@
-# =====================================================================
-#                  AI and Biotechnology / Bioinformatics
-# =====================================================================
-#               AI and Omics Research Internship (2025)
-# =====================================================================
-#        Module III: Introduction to Machine Learning for Genomics 
-# =====================================================================
-#                      Microarray Data Analysis
-# =====================================================================
-
 # Topics Covered:
 #   1. Preprocessing microarray data
 #   2. Feature selection (Boruta, RFE)
@@ -377,3 +367,4 @@ legend("bottomright",
 
 
 save.image(file= "Workspace/Machine_Learning_1.RData")
+
