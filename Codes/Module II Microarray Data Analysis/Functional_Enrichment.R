@@ -1,15 +1,3 @@
-# =====================================================================
-#               AI and Biotechnology / Bioinformatics
-# =====================================================================
-
-# ---------------------------------------------------------------------
-#              AI and Omics Research Internship (2025)
-# ---------------------------------------------------------------------
-#             Module II: Introduction to Genomics Data Analysis
-# ---------------------------------------------------------------------
-#                     Microarray Data Analysis
-# =====================================================================
-
 # Topics:
 # Enrichment Analysis 
 # Overrepresentation Analysis (ORA) - GO & KEGG
@@ -261,4 +249,5 @@ write.csv(top_GO, file.path(enrich_folder, "Top10_GO_Combined_By_Ontology.csv"),
 write.csv(KEGG_sig %>% arrange(p.adjust) %>% head(10), file.path(enrich_folder, "Top10_KEGG_pathways.csv"), row.names = FALSE)
 write.csv(GSEA_up %>% head(10), file.path(enrich_folder, "Top10_GSEA_Upregulated.csv"), row.names = FALSE)
 write.csv(GSEA_down %>% head(10), file.path(enrich_folder, "Top10_GSEA_Downregulated.csv"), row.names = FALSE)
+
 
