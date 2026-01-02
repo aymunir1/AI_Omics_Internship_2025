@@ -174,7 +174,7 @@ This repository contains all practical sessions completed during **Module I (R P
 
 
 ## 📁 Repository Structure
-AI_Omics_Internship_2025/
+
 ├── Codes/
 │   ├── Module I Basic of R/
 │   ├── Module II Microarray Data Analysis/
