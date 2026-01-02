@@ -1,4 +1,6 @@
-####################### Class 1c   ###############################
+#------------------------------------------------------------------
+#                  Class 1c   
+#------------------------------------------------------------------
 
 # Organize Project folder
 # data
@@ -130,4 +132,5 @@ save(gene_expression, disease_status, file = "workspace.RData")
 
 load("workspace.RData")
 load("full_workspace.RData")
+
 
