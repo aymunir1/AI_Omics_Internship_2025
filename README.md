@@ -181,13 +181,13 @@ AI_Omics_Internship_2025/
 │   └── Module III Machine Learning/
 │
 ├── Datasets/
-│   ├── Raw datasets
+│   ├── Raw Datasets/
 │   ├── Clean Datasets/
-│   └── DEG results
+│   └── DEG Results/
 │
 ├── Results/
-│   ├── Feature selection
-│   ├── Enrichment analysis
-│   └── Model evaluation outputs
+│   ├── Feature Selection/
+│   ├── Enrichment Analysis/
+│   └── Model Evaluation Outputs/
 │
 └── README.md
