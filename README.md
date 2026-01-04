@@ -1,10 +1,8 @@
-# 🧬 AI-Driven Omics Data Analysis Internship (2025)
+# 🧬 AI_Omics_Internship (2025)
 This repository documents a **comprehensive, hands-on bioinformatics and machine learning training program** focused on **omics data analysis**, with practical implementations in **R**, **microarray transcriptomics**, **machine learning**, and **functional enrichment analysis**.
 The project demonstrates an end-to-end analytical pipeline—from raw gene expression data to biological interpretation and predictive modeling—aligned with modern **AI-driven biomedical research** standards.
 
 ---
-## Project Objectives
-
 ## Project Objectives
 - Develop strong foundations in **R for bioinformatics**
 - Process and normalize **Affymetrix microarray data**
@@ -13,35 +11,39 @@ The project demonstrates an end-to-end analytical pipeline—from raw gene expre
 - Identify biologically meaningful patterns via **GO, KEGG, and GSEA**
 - Ensure **reproducibility, interpretability, and rigorous evaluation**
 ---
-## Repository Structure
+## 📁 Repository Structure
+
+```
 AI_Omics_Internship_2025/
 ├── Codes/
-│ ├── Module I Basic of R/
-│ │ └── R fundamentals, data structures, functions
-│ │
-│ ├── Module II Microarray Data Analysis/
-│ │ ├── Differential expression analysis
-│ │ └── Functional enrichment (GO, KEGG, GSEA)
-│ │
-│ └── Module III Machine Learning/
-│ ├── Data preprocessing
-│ ├── Feature selection (Boruta, RFE)
-│ └── Model training & evaluation
+│   ├── Module I Basic of R/
+│   │   └── R fundamentals, data structures, functions
+│   │
+│   ├── Module II Microarray Data Analysis/
+│   │   ├── Differential expression analysis
+│   │   └── Functional enrichment (GO, KEGG, GSEA)
+│   │
+│   └── Module III Machine Learning/
+│       ├── Data preprocessing
+│       ├── Feature selection (Boruta, RFE)
+│       └── Model training & evaluation
 │
 ├── Datasets/
-│ ├── Raw Datasets/
-│ ├── Clean Datasets/
-│ └── DEG Results/
+│   ├── Raw Datasets/
+│   ├── Clean Datasets/
+│   └── DEG Results/
 │
 ├── Results/
-│ ├── Feature selection outputs
-│ ├── Enrichment analysis tables
-│ └── Model performance metrics
+│   ├── Feature selection outputs
+│   ├── Enrichment analysis tables
+│   └── Model performance metrics
 │
 ├── Workspace/
-│ └── Saved RData workspaces
+│   └── Saved RData workspaces
 │
 └── README.md
+```
+
 
 ---
 ## Module Overview
@@ -96,24 +98,25 @@ AI_Omics_Internship_2025/
   - Dot plots
   - Bar plots
   - Running enrichment score plots
-### Data Preprocessing
+### Machine learning
+- **Data Preprocessing**
 - Log₁₀ transformation to stabilize variance
 - Data transposition (samples as rows, genes as columns)
 - Near-zero variance filtering
 - Feature centering and scaling
 - KNN-based missing value imputation
-### Feature Selection
+- **Feature Selection**
 - **Boruta:** Random Forest–based feature importance testing
 - **Recursive Feature Elimination (RFE):** Iterative feature pruning
 - Extraction of **common informative genes** across methods
-### Model Training
+- **Model Training**
 - 70/30 training–testing split
 - 10-fold cross-validation
 - Algorithms implemented:
   - Random Forest (RF)
   - Support Vector Machine (SVM – radial kernel)
   - Artificial Neural Network (ANN)
-### Model Evaluation
+- **Model Evaluation**
 - Confusion matrices and accuracy comparison
 - ROC curve visualization
 - Area Under the Curve (AUC) for model discrimination
@@ -127,7 +130,6 @@ AI_Omics_Internship_2025/
 - Exported CSV files for downstream analysis
 ---
 ## 🛠 Software, Packages, and Libraries Used
-
 This project was implemented entirely in **R**, leveraging **CRAN** and **Bioconductor** packages widely used in transcriptomics, machine learning, and functional enrichment analysis.
 ## 🔹 Core Programming Environment
 - **R** – statistical computing and data analysis language
