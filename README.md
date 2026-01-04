@@ -4,11 +4,14 @@ The project demonstrates an end-to-end analytical pipeline—from raw gene expre
 
 ---
 ## Project Objectives
-- Build strong foundations in **R programming for bioinformatics**
-- Perform **microarray differential gene expression analysis**
+
+## 🎯 Project Objectives
+- Develop strong foundations in **R for bioinformatics**
+- Process and normalize **Affymetrix microarray data**
+- Perform **differential gene expression analysis**
 - Apply **machine learning models** to high-dimensional omics data
-- Identify biologically meaningful patterns using **functional enrichment analysis**
-- Ensure **reproducibility, interpretability, and robust evaluation**
+- Identify biologically meaningful patterns via **GO, KEGG, and GSEA**
+- Ensure **reproducibility, interpretability, and rigorous evaluation**
 ---
 ## Repository Structure
 AI_Omics_Internship_2025/
@@ -62,6 +65,31 @@ AI_Omics_Internship_2025/
 - Model performance comparison and validation
 ---
 ## Methodological Workflow
+##  Probe Annotation & Differential Gene Expression
+### Package & Libraries
+- limma
+- AnnotationDbi
+- hgu133plus2.db
+- ggplot2
+- pheatmap
+### Probe-to-Gene Mapping
+- Mapped Affymetrix probe IDs to **gene symbols**
+- Identified multiple probes per gene
+- Collapsed duplicates using **average expression (avereps)**
+- Ensured one expression value per gene
+### Differential Expression Analysis
+- Linear modeling with `limma`
+- Design matrix without intercept
+- Contrast: **cancer_vs_normal**
+- Multiple testing correction (Benjamini–Hochberg)
+- Genes classified as:
+  - Upregulated (logFC > 1)
+  - Downregulated (logFC < −1)
+### Visualizations
+- Volcano plot (logFC vs −log₁₀ p-value)
+- Heatmap of top 25 DEGs
+- All plots exported as high-resolution PNGs
+---
 ## Functional Enrichment Analysis
 - **Overrepresentation Analysis (ORA):**
   - Gene Ontology (BP, MF, CC)
@@ -103,19 +131,7 @@ AI_Omics_Internship_2025/
 - Reproducible `.RData` workspaces
 - Exported CSV files for downstream analysis
 ---
-## 🛠 Tools & Technologies
-### Programming & Analysis
-- **R**
-### Key R Packages
-- `caret`
-- `randomForest`
-- `Boruta`
-- `kernlab`
-- `clusterProfiler`
-- `org.Hs.eg.db`
-- `msigdbr`
-- `pROC`
-- `ggplot2`
+
 ### Databases
 - NCBI GEO
 - Gene Ontology (GO)
