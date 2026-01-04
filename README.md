@@ -5,7 +5,7 @@ The project demonstrates an end-to-end analytical pipeline—from raw gene expre
 ---
 ## Project Objectives
 
-## 🎯 Project Objectives
+## Project Objectives
 - Develop strong foundations in **R for bioinformatics**
 - Process and normalize **Affymetrix microarray data**
 - Perform **differential gene expression analysis**
@@ -67,12 +67,6 @@ AI_Omics_Internship_2025/
 ---
 ## Methodological Workflow
 ##  Probe Annotation & Differential Gene Expression
-### Package & Libraries
-- limma
-- AnnotationDbi
-- hgu133plus2.db
-- ggplot2
-- pheatmap
 ### Probe-to-Gene Mapping
 - Mapped Affymetrix probe IDs to **gene symbols**
 - Identified multiple probes per gene
@@ -132,20 +126,65 @@ AI_Omics_Internship_2025/
 - Reproducible `.RData` workspaces
 - Exported CSV files for downstream analysis
 ---
+## 🛠 Software, Packages, and Libraries Used
 
+This project was implemented entirely in **R**, leveraging **CRAN** and **Bioconductor** packages widely used in transcriptomics, machine learning, and functional enrichment analysis.
+## 🔹 Core Programming Environment
+- **R** – statistical computing and data analysis language
+- **RStudio** – integrated development environment (IDE)
+## 🔹 Data Acquisition & Microarray Processing
+- **GEOquery** – retrieval of GEO series matrices and raw CEL files
+- **affy** – preprocessing and RMA normalization of Affymetrix microarray data
+- **arrayQualityMetrics** – quality control diagnostics for microarray experiments
+## 🔹 Annotation & Probe Mapping
+- **AnnotationDbi** – annotation framework for biological databases
+- **hgu133plus2.db** – Affymetrix HG-U133 Plus 2.0 probe annotation database
+- **org.Hs.eg.db** – human gene annotation (Entrez IDs, gene symbols)
+## 🔹 Differential Expression Analysis
+- **limma** – linear modeling and empirical Bayes statistics for DEG analysis
+- **Biobase** – handling of ExpressionSet objects
+- **genefilter** – filtering of low-variance and low-expression features
+## 🔹 Data Preprocessing & Feature Engineering
+- **caret** – unified framework for data preprocessing and model training
+- **DMwR** – KNN-based missing value imputation
+- **dplyr** – data manipulation and transformation
+- **tidyr** – tidy data reshaping
+- **tibble** – modern data frame handling
+## 🔹 Feature Selection
+- **Boruta** – Random Forest–based all-relevant feature selection
+- **randomForest** – ensemble learning and variable importance
+- **caret** – Recursive Feature Elimination (RFE) implementation
+## 🔹 Machine Learning Models
+- **randomForest** – Random Forest classifier
+- **kernlab** – Support Vector Machine (SVM) models
+- **nnet** – Artificial Neural Network (ANN) implementation
+- **e1071** – auxiliary utilities for SVM and classification
+## 🔹 Model Evaluation & Performance Metrics
+- **pROC** – ROC curve generation and AUC calculation
+- **caret** – confusion matrices and cross-validation
+- **ROCR** – classifier performance visualization
+## Functional Enrichment Analysis
+- **clusterProfiler** – GO, KEGG, and GSEA enrichment analysis
+- **enrichplot** – visualization of enrichment results
+- **msigdbr** – MSigDB Hallmark gene set retrieval
+- **DOSE** – enrichment result handling and visualization support
+## Data Visualization
+- **ggplot2** – statistical graphics and plots
+- **pheatmap** – heatmap visualization of gene expression
+- **RColorBrewer** – color palettes for plots
+- **cowplot** – multi-panel figure assembly
+---
 ### Databases
 - NCBI GEO
 - Gene Ontology (GO)
 - KEGG
 - MSigDB (Hallmark gene sets)
----
 ## Reproducibility & Best Practices
 - Fixed random seeds
 - Modular, well-documented scripts
 - Structured directories
 - Saved analytical workspaces
 - Exported results for transparency
----
 ## Learning Outcomes
 - Practical R programming for omics research
 - End-to-end transcriptomics analysis
@@ -153,10 +192,8 @@ AI_Omics_Internship_2025/
 - Feature selection in high-dimensional data
 - Biological interpretation of computational results
 - Research-ready and reproducible workflows
----
 ## Intended Use
 - Bioinformatics training and education
 - Research skill demonstration
 - Internship and graduate program portfolio
 - Foundation for RNA-seq, proteomics, or multi-omics extensions
----
