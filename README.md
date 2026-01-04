@@ -1,195 +1,193 @@
-# 📘 AI Omics Internship 2025 — Practical Sessions  
+# 🧬 AI-Driven Omics Data Analysis Internship (2025)
 
-This repository contains all practical sessions completed during on:
-- **Module I (R Programming Basics)**  
-- **Module II (Genomics Data Analysis)**
-- **Module III (Machine Learnimg)**
+This repository documents a **comprehensive, hands-on bioinformatics and machine learning training program** focused on **omics data analysis**, with practical implementations in **R**, **microarray transcriptomics**, **machine learning**, and **functional enrichment analysis**.
 
----
-
-## 🔷 Module I — Basics of R Programming
-
-### **Class Sessions**
-1. **Class 1A:** R Program Installation  
-2. **Class 1B:** R Basic Operations — [View Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I%20Basic%20of%20R/Yusuf_Munir_Aliyu_class_1b_Assignment.R)  
-3. **Class 1C:** R Basic Syntax — [View Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I%20Basic%20of%20R/Yusuf_Munir_Aliyu_class_2_Assignment.R)  
-4. **Class 2:** Operators, Data Structures, Functions & Loops — [View Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20I%20Basic%20of%20R/Module%20I-Basic_R_Functions-Class_2.R)
+The project demonstrates an end-to-end analytical pipeline—from raw gene expression data to biological interpretation and predictive modeling—aligned with modern **AI-driven biomedical research** standards.
 
 ---
 
-## 🧩 Task 1 — Data Cleaning & Project Setup  
-📄 [Script:](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_class_1b_Assignment.R)
+## Project Objectives
 
-### **Key Activities**
-- Created standard project directories (`raw_data`, `clean_data`, `scripts`, `results`, `plot`).  
-- Loaded dataset (`patient_info.csv`) and performed structural inspection.  
-- Converted categorical variables to factors (`gender`, `diagnosis`, `smoker`, `patient_id`).  
-- Created `smoking_status` binary variable (Yes = 1, No = 0).  
-- Exported cleaned dataset to `clean_data/patient_info_clean.csv`.
----
-
-## 🧬 Task 2 — Gene Expression Classification Function  
-📄 [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_class_2_Assignment.R)
-
-### **Summary**
-- Implemented custom function `classify_gene()` based on `logFC` and `padj`.  
-- **Classification rules:**  
-  - Upregulated: `logFC > 1` & `padj < 0.05`  
-  - Downregulated: `logFC < -1` & `padj < 0.05`  
-  - Not Significant: otherwise  
-- Processed two DEG datasets using a loop.  
-- Replaced missing adjusted p-values with `1`.  
-- Added `status` column and saved results to the `Result` folder.  
-- Generated summary frequency tables.
+- Build strong foundations in **R programming for bioinformatics**
+- Perform **microarray differential gene expression analysis**
+- Apply **machine learning models** to high-dimensional omics data
+- Identify biologically meaningful patterns using **functional enrichment analysis**
+- Ensure **reproducibility, interpretability, and robust evaluation**
 
 ---
 
-# 🔷 Module II — Introduction to Genomics Data Analysis
+## Repository Structure
 
-## 🌐 Task 3 — Dataset Retrieval
-- Retrieved microarray datasets from **ArrayExpress** and **NCBI GEO** for analysis.
-
----
-
-## 🧹 Task 4 — Microarray Preprocessing Workflow  
-📄 [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_4_Assignment.R)
-
-### **1. Quality Control**
-- Performed pre- and post-normalization QC.  
-- Identified outliers using boxplots, PCA, and MA plots.  
-- Documented outliers before and after normalization.
-
-### **2. Normalization & Probe Filtering**
-- Applied normalization methods (RMA, quantile normalization).  
-- Filtered low-intensity and non-informative probes.  
-- Recorded number of retained transcripts.
-
-### **3. Phenotype Definition**
-- Defined biological groups (Normal vs Cancer).  
-- Ensured consistent sample labeling.
-
----
-
-##  Task 5 — Differential Expression Analysis  
-📄 [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_5_Assignment.R)
-
-### **1. Probe-to-Gene Mapping**
-- Used `AnnotationDbi` to map probe IDs to gene symbols.  
-- Managed duplicate probes by averaging expression.
-
-### **2. limma Differential Expression**
-- Designed contrast: `cancer_vs_normal`.  
-- Applied `lmFit()` and `eBayes()` for model fitting.  
-- Extracted DEGs using `topTable()` with FDR & log2FC thresholds.
-
-### **3. Visualization**
-- Generated volcano plot showing up- & downregulated genes.  
-- Created heatmap of top 25 DEGs using `pheatmap`.
-
----
-
-##  Task 6 — Functonal Enrichment Analysis  
-[R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Functional_Enrichment.R)
-
-### Enrichment Analysis Setup
-- Differentially expressed genes (DEGs) are mapped from **gene symbols to Entrez IDs**
-- Invalid, duplicated, or unmapped genes are removed
-- Significant genes are separated into **upregulated** and **downregulated** sets
-- A background gene universe is defined for overrepresentation testing  
-
-
-### Overrepresentation Analysis (ORA)
-
-#### Gene Ontology (GO)
-- Performs ORA across all three GO domains:
-  - **Biological Process (BP)**
-  - **Molecular Function (MF)**
-  - **Cellular Component (CC)**
-- Identifies GO terms significantly enriched in DEGs compared to background genes
-- Results visualized using:
-  - Dot plots
-  - Bar plots
-  - Ontology-stratified enrichment plots  
-
-#### KEGG Pathway Analysis
-- Identifies significantly enriched **metabolic and signaling pathways**
-- Uses Homo sapiens–specific KEGG annotations
-- Visualizations include:
-  - Dot plots
-  - UpSet plots showing gene overlap among pathways  
-
-
-
-### Gene Set Enrichment Analysis (GSEA)
-
-- Uses a **ranked gene list** based on log fold change (logFC)
-- No hard significance threshold required
-- Employs **MSigDB Hallmark Gene Sets**
-- Identifies pathways enriched at the top or bottom of the ranked list
-- Outputs include:
-  - Enrichment score (NES)
-  - Direction of regulation (up/down)
-  - Core enrichment genes
-- Visualization using:
-  - Running enrichment score plots
-  - Comparative GSEA plots across hallmark pathways  
-
-### Results Summary & Reporting
-
-- Significant results filtered using adjusted p-value < 0.05
-- Outputs generated for:
-  - GO (BP, MF, CC)
-  - KEGG pathways
-  - GSEA (upregulated and downregulated pathways)
-- Summary tables report:
-  - Total number of significant pathways
-  - Directionality of enrichment (GSEA)
-- All results exported as CSV files for reproducibility and downstream reporting
-
-
-----
-
-##  Task 7 — Machine Learning
-[R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/tree/main/Codes/Module%20III%20Machine%20Learning)
-###  Data Preprocessing
-- Log₁₀ transformation to stabilize variance  
-- Transposition (samples as rows, genes as columns)  
-- Near-zero variance filtering  
-- Feature scaling and centering  
-- KNN imputation for missing values  
-
-### Feature Selection
-- **Boruta** identifies statistically significant genes  
-- **RFE (Recursive Feature Elimination)** iteratively removes weak predictors  
-- Common genes between Boruta and RFE are extracted  
-
-### Model Training
-- 70/30 train–test split  
-- 10-fold cross-validation  
-- **Random Forest (RF)**, **Support Vector Machine (SVM)**, and **Artificial Neural Network (ANN)** trained on selected gene sets  
-
-### Model Evaluation
-- Accuracy assessment using confusion matrices  
-- ROC curve visualization  
-- AUC-based model discrimination comparison  
-
------------
-
-
-## 📁 Repository Structure
-```
 AI_Omics_Internship_2025/
 ├── Codes/
-│   ├── Module I Basic of R/
-│   ├── Module II Microarray Data Analysis/
-│   └── Module III Machine Learning/
+│ ├── Module I Basic of R/
+│ │ └── R fundamentals, data structures, functions
+│ │
+│ ├── Module II Microarray Data Analysis/
+│ │ ├── Differential expression analysis
+│ │ └── Functional enrichment (GO, KEGG, GSEA)
+│ │
+│ └── Module III Machine Learning/
+│ ├── Data preprocessing
+│ ├── Feature selection (Boruta, RFE)
+│ └── Model training & evaluation
+│
 ├── Datasets/
-│   ├── Raw Datasets/
-│   ├── Clean Datasets/
-│   └── DEG Results/
+│ ├── Raw Datasets/
+│ ├── Clean Datasets/
+│ └── DEG Results/
+│
 ├── Results/
-│   ├── Feature Selection/
-│   ├── Enrichment Analysis/
-│   └── Model Evaluation Outputs/
+│ ├── Feature selection outputs
+│ ├── Enrichment analysis tables
+│ └── Model performance metrics
+│
+├── Workspace/
+│ └── Saved RData workspaces
+│
 └── README.md
-```
+
+---
+
+## Module Overview
+
+### Module I: Basics of R
+- R syntax and data structures
+- Data manipulation and visualization
+- Script-based analytical thinking
+- Preparation for bioinformatics workflows
+
+---
+
+### Module II: Microarray Data Analysis
+- Quality-controlled gene expression data handling
+- Differential gene expression analysis
+- Functional interpretation using:
+  - **Gene Ontology (GO):** BP, MF, CC
+  - **KEGG pathway analysis**
+  - **Gene Set Enrichment Analysis (GSEA)** using MSigDB Hallmark sets
+- Biological insight generation from DEG profiles
+
+---
+
+### Module III: Machine Learning for Omics Data
+- High-dimensional data preprocessing
+- Feature reduction and selection
+- Supervised classification models
+- Model performance comparison and validation
+
+---
+
+## Methodological Workflow
+
+### 1 Data Preprocessing
+- Log₁₀ transformation to stabilize variance
+- Data transposition (samples as rows, genes as columns)
+- Near-zero variance filtering
+- Feature centering and scaling
+- KNN-based missing value imputation
+
+---
+
+### 2 Feature Selection
+- **Boruta:** Random Forest–based feature importance testing
+- **Recursive Feature Elimination (RFE):** Iterative feature pruning
+- Extraction of **common informative genes** across methods
+
+---
+
+### 3 Model Training
+- 70/30 training–testing split
+- 10-fold cross-validation
+- Algorithms implemented:
+  - Random Forest (RF)
+  - Support Vector Machine (SVM – radial kernel)
+  - Artificial Neural Network (ANN)
+
+---
+
+### 4 Model Evaluation
+- Confusion matrices and accuracy comparison
+- ROC curve visualization
+- Area Under the Curve (AUC) for model discrimination
+
+---
+
+## Functional Enrichment Analysis
+
+- **Overrepresentation Analysis (ORA):**
+  - Gene Ontology (BP, MF, CC)
+  - KEGG pathways
+- **Gene Set Enrichment Analysis (GSEA):**
+  - MSigDB Hallmark gene sets
+  - Identification of upregulated and downregulated pathways
+- Publication-ready visualizations:
+  - Dot plots
+  - Bar plots
+  - Running enrichment score plots
+
+---
+
+## Outputs & Results
+
+- Selected gene lists (Boruta, RFE, intersected genes)
+- GO, KEGG, and GSEA enrichment tables
+- Machine learning performance metrics
+- ROC and AUC comparisons
+- Reproducible `.RData` workspaces
+- Exported CSV files for downstream analysis
+
+---
+
+## 🛠 Tools & Technologies
+
+### Programming & Analysis
+- **R**
+
+### Key R Packages
+- `caret`
+- `randomForest`
+- `Boruta`
+- `kernlab`
+- `clusterProfiler`
+- `org.Hs.eg.db`
+- `msigdbr`
+- `pROC`
+- `ggplot2`
+
+### Databases
+- Gene Ontology (GO)
+- KEGG
+- MSigDB (Hallmark gene sets)
+
+---
+
+## Reproducibility & Best Practices
+
+- Fixed random seeds
+- Modular, well-documented scripts
+- Structured directories
+- Saved analytical workspaces
+- Exported results for transparency
+
+---
+
+## Learning Outcomes
+
+- Practical R programming for omics research
+- End-to-end transcriptomics analysis
+- Machine learning application in biology
+- Feature selection in high-dimensional data
+- Biological interpretation of computational results
+- Research-ready and reproducible workflows
+
+---
+
+## Intended Use
+
+- Bioinformatics training and education
+- Research skill demonstration
+- Internship and graduate program portfolio
+- Foundation for RNA-seq, proteomics, or multi-omics extensions
+
+---
