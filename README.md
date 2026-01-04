@@ -51,14 +51,14 @@ AI_Omics_Internship_2025/
 - Script-based analytical thinking
 - Preparation for bioinformatics workflows  
 ### Module II: Microarray Data Analysis
-- Quality-controlled gene expression data handling
-- Differential gene expression analysis
-- Functional interpretation using:
+- Quality-controlled gene expression data handling [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_4_Assignment.R)
+- Differential gene expression analysis [Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Yusuf_Munir_Aliyu_5_Assignment.R)
+- Functional interpretation using: [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/blob/main/Codes/Module%20II%20Microarray%20Data%20Analysis/Functional_Enrichment.R)
   - **Gene Ontology (GO):** BP, MF, CC
   - **KEGG pathway analysis**
   - **Gene Set Enrichment Analysis (GSEA)** using MSigDB Hallmark sets
 - Biological insight generation from DEG profiles
-### Module III: Machine Learning for Omics Data
+### Module III: Machine Learning for Omics Data [R Script](https://github.com/aymunir1/AI_Omics_Internship_2025/tree/main/Codes/Module%20III%20Machine%20Learning)
 - High-dimensional data preprocessing
 - Feature reduction and selection
 - Supervised classification models
