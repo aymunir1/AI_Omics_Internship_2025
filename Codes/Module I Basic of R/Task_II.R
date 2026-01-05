@@ -2,7 +2,6 @@
 #             TASK 2
 #-------------------------------------------
 
-
 # Write a function classify_gene() 
 
 # that takes:
@@ -65,5 +64,6 @@ for (file in files) {
   cat("\nSummary for", file, ":\n")
   print(table(DEG$status))
 }
+
 
 
