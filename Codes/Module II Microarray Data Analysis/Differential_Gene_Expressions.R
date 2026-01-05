@@ -2,7 +2,6 @@
 ############################# TASK 5 ############################ 
 #-----------------------------------------------------------------
 
-
 # Map probe IDs to gene symbols using AnnotationDbi
 #        i.  Find the appropriate annotation package for your platform and use it 
 #        ii. Check how many probes map to the same gene and handle duplicates
@@ -293,4 +292,5 @@ dev.off()
 
 
 save.image(file = "Workspace/Microarray_data_analysis.RData")
+
 
