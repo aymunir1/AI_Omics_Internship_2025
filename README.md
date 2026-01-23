@@ -1,6 +1,6 @@
 # 🧬 AI_Omics_Internship (2025)
 This repository documents a **comprehensive, hands-on bioinformatics and machine learning training program** focused on **omics data analysis**, with practical implementations in **R**, **microarray transcriptomics**, **machine learning**, and **functional enrichment analysis**.
-The project demonstrates an end-to-end analytical pipeline—from raw gene expression data to biological interpretation and predictive modeling—aligned with modern **AI-driven biomedical research** standards.
+The project demonstrates an end-to-end analytical pipeline from raw gene expression data to biological interpretation and predictive modeling aligned with modern **AI-driven biomedical research** standards.
 
 ---
 ## Project Objectives
